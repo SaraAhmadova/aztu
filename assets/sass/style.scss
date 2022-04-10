@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(228, 232, 240);
+  padding: 0 10%;
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: unset;
+    }
+  }
+  .top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    * {
+      font-size: 14px;
+    }
+    ul {
+      li {
+        margin-left: 15px;
+        a {
+          &:hover {
+          }
+          &.lang {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // margin-left: 5px;
+            img {
+              height: 18px;
+              width: 20px;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+    @media screen and(max-width: 500px) {
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+  .main-content {
+    border: 1px solid rgb(152, 154, 172);
+    background-color: #fff;
+    padding: 20px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 > a {
+        color: #111e62;
+        font-size: 24px;
+      }
+      @media screen and(max-width: 500px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .links {
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      border: 1px solid #e7e7e7;
+      background-color: #f7f7f7;
+      h2 {
+        display: inline-block;
+        color: #333333;
+        font-size: 18px;
+      }
+      ul {
+        padding-left: 16px;
+        list-style: circle;
+        flex-direction: column;
+      }
+    }
+    .txt {
+      padding: 15px 20px;
+      font-size: 13px;
+      color: #336699;
+      line-height: 15px;
+      text-align: justify;
+      margin-bottom: 20px;
+      // width: 720px;
+      min-height: 200px;
+      background-color: #e5eef4;
+    }
+  }
+  footer {
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #929599;
+    border: 1px solid #8e9196;
+    .cont {
+      span {
+        margin-left: 5px;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 110%;
+      }
+      .name {
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0px 67px;
+      }
+      .info {
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 110%;
+        padding: 0px 71px;
+      }
+    }
+    @media screen and(max-width: 500px) {
+      .cont > p.info,
+      .cont > p.name {
+        padding: 0;
+      }
+    }
+  }
+}
