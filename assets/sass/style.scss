@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(228, 232, 240);
+  background-color: rgb(176, 184, 199);
   padding: 0 10%;
   ul {
     list-style: none;
@@ -16,8 +16,12 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+    background-color: #111e62;
+    border-radius: 15px 15px 0 0;
+    padding-top: 15px;
     * {
       font-size: 14px;
+      color: #fff;
     }
     ul {
       li {
@@ -47,6 +51,7 @@ body {
   }
   .main-content {
     border: 1px solid rgb(152, 154, 172);
+    border-radius: 0 0 15px 15px;
     background-color: #fff;
     padding: 20px;
     .header {
@@ -68,31 +73,33 @@ body {
       margin-bottom: 20px;
     }
     .links {
-      padding: 10px 12px;
+      padding: 10px 17px;
       margin-bottom: 10px;
       border: 1px solid #e7e7e7;
-      background-color: #f7f7f7;
+      background-color: #f4f9fd;
+      min-height: 40%;
+      // background-color: #f7f7f7;
       h2 {
         display: inline-block;
         color: #333333;
         font-size: 18px;
       }
       ul {
-        padding-left: 16px;
-        list-style: circle;
+        padding-left: 0;
         flex-direction: column;
       }
     }
     .txt {
       padding: 15px 20px;
-      font-size: 13px;
+      font-size: 14px;
+      font-weight: 400;
       color: #336699;
       line-height: 15px;
       text-align: justify;
       margin-bottom: 20px;
       // width: 720px;
       min-height: 200px;
-      background-color: #e5eef4;
+      background-color: #f4f9fd;
     }
   }
   footer {
@@ -100,8 +107,9 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #929599;
+    background-color: #3d4e64;
     border: 1px solid #8e9196;
+    border-radius: 15px;
     .cont {
       span {
         margin-left: 5px;
